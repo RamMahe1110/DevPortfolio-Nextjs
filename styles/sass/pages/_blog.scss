@@ -23,6 +23,7 @@
     background: #fff;
     box-shadow: 0 0 10px rgba(grey, 0.1);
     border-radius: 5px;
+    cursor: pointer;
   }
   &__item-img-cont {
     margin-bottom: 3rem;
@@ -78,12 +79,31 @@
     border-radius: 5px;
     min-width: 15rem;
     font-size: 1.5rem;
-    @include respond(phone) { 
-        min-width: 12rem;
-        font-size: 1.4rem;
+    @include respond(phone) {
+      min-width: 12rem;
+      font-size: 1.4rem;
     }
     &:first-child {
       margin-right: 2rem;
     }
+  }
+}
+
+.main-blog {
+  padding: 8rem 0;
+  line-height: 1.7;
+  font-size: 2rem;
+  color: #666;
+
+  @include respond(phone) {
+    padding: 5rem 0;
+  }
+
+  &__container {
+    max-width: 75rem;
+  }
+
+  &__pag {
+    margin-top: 6rem;
   }
 }

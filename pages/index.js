@@ -1,8 +1,15 @@
+import Head from 'next/head'
 import Link from 'next/link'
 
-export default function Home() {
+export default function Home(props) {
   return (
     <>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charSet="utf-8" />
+        <meta name="Description" content={props.description}></meta>
+        <title>{props.title}</title>
+      </Head>
       <section className="hero home-hero">
         <div className="container">
           <h1 className="heading heading-primary">
@@ -205,3 +212,4 @@ export default function Home() {
     </>
   )
 }
+
