@@ -1,0 +1,382 @@
+.header {
+  position: fixed;
+  width: calc(100% - 4rem);
+  left: 50%;
+  top: 2rem;
+  transform: translate(-50%, 0%);
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+
+  border-radius: 5px;
+
+  @include respond(tab-port) {
+    width: calc(100% - 2rem);
+    top: 1rem;
+  }
+
+  @include respond(phone) {
+    padding: 2.3rem 0;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5rem;
+    @include respond(tab-port) {
+      padding: 0 2rem;
+    }
+  }
+
+  &__logo-container {
+    width: 9rem;
+  }
+  &__logo {
+    width: 100%;
+  }
+  &__links {
+    display: flex;
+    @include respond(phone) {
+      display: none;
+    }
+  }
+  &__link {
+    padding: 3rem 3rem;
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #777;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}
+
+.hero {
+  color: $themeTextMain;
+  background: linear-gradient(
+      to right,
+      rgba($themeClrMain, 0.9),
+      rgba($themeClrSec, 0.9)
+    ),
+    url('https://images.unsplash.com/photo-1572480458626-97293402cc46?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80');
+  background-size: cover;
+  background-position: center;
+
+  padding: 22rem 0 17rem 0;
+
+  @include respond(phone) {
+    padding: 16rem 0 10rem 0;
+  }
+
+  &__text-primary {
+    color: $themeTextSec;
+  }
+  &__info {
+    margin: 3rem 0 0rem 0;
+    max-width: 80rem;
+  }
+  &__cta {
+    margin-top: 8rem;
+    text-align: center;
+  }
+
+  &__btn {
+    @include respond(phone) {
+      width: 100%;
+    }
+    &:first-child {
+      margin-right: 2rem;
+      @include respond(phone) {
+        margin-bottom: 1.5rem;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.home-hero {
+  &__info {
+    margin: 3rem 0 7rem 0;
+    @include respond(phone) {
+      margin: 3rem 0 4rem 0;
+    }
+  }
+  &__cta {
+    margin-top: 0rem;
+    text-align: left;
+  }
+}
+
+.about {
+  min-height: 50vh;
+  background: #fff;
+  padding: 10rem 0 13rem 0;
+  @include respond(tab-port) {
+    padding: 5rem 0 8rem 0;
+  }
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+      grid-gap: 5rem;
+    }
+  }
+
+  &__main-content {
+    max-width: 50rem;
+    padding-top: 10rem;
+    @include respond(tab-land) {
+      padding-top: 0;
+      max-width: unset;
+    }
+  }
+
+  &__text-content {
+    margin: 6rem 0;
+    @include respond(phone) {
+      margin: 5rem 0 4rem 0;
+    }
+  }
+
+  &__text-sec {
+    color: #777;
+  }
+
+  &__img-cont {
+    overflow: hidden;
+    background: #000;
+    box-shadow: 30px 30px 0px 0px rgba($themeClrSec, 1);
+    -webkit-box-shadow: 30px 30px 0px 0px rgba($themeClrSec, 1);
+    -moz-box-shadow: 30px 30px 0px 0px rgba($themeClrSec, 1);
+    border-radius: 5px;
+    @include respond(tab-land) {
+      box-shadow: 10px 10px 0px 0px rgba($themeClrSec, 1);
+      -webkit-box-shadow: 10px 10px 0px 0px rgba($themeClrSec, 1);
+      -moz-box-shadow: 10px 10px 0px 0px rgba($themeClrSec, 1);
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.skills {
+  padding: 8rem 0;
+  background: rgb(240, 240, 240);
+  @include respond(phone) {
+    padding: 7rem 0;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    @include respond(phone) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 6rem 2rem;
+    }
+  }
+  &__skill {
+    font-size: 8rem;
+    color: rgb(180, 180, 180);
+    @include respond(phone) {
+      text-align: center;
+    }
+  }
+}
+
+.projects {
+  padding: 8rem 0;
+  background: #eee;
+
+  @include respond(tab-port) {
+    padding: 5rem 0;
+  }
+}
+
+.projects-list {
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5rem;
+
+  @include respond(tab-land) {
+    grid-gap: 2rem;
+  }
+
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+  }
+
+  &__project {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    padding: 0rem 2rem;
+    border-radius: 5px;
+    text-align: center;
+  }
+  &__img-cont {
+    padding: 2rem 0rem 0rem 0;
+    background: #fff;
+    overflow: hidden;
+    margin-bottom: 3rem;
+    max-height: 350px;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__heading {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+
+    letter-spacing: 1px;
+    color: #444;
+    padding: 0rem 0;
+    margin-bottom: 2rem;
+  }
+  &__text-tertiary {
+    color: #777;
+    margin-bottom: 4rem;
+    line-height: 1.9;
+  }
+  &__btn {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
+.contact {
+  padding: 8rem 0;
+  background: linear-gradient(
+      to right,
+      rgba($themeClrMain, 0.9),
+      rgba($themeClrSec, 0.9)
+    ),
+    url('https://images.unsplash.com/photo-1572480458626-97293402cc46?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80');
+  background-size: cover;
+  background-position: center;
+  @include respond(tab-port) {
+    padding: 5rem 0;
+  }
+  &__heading {
+    color: $themeTextMain;
+    &::after {
+      background: $themeTextMain;
+    }
+  }
+  &__form-container {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    padding: 5rem;
+    margin-top: 6rem;
+    border-radius: 5px;
+    @include respond(phone) {
+      padding: 3rem 2rem;
+    }
+  }
+  &__form-field {
+    margin-bottom: 3rem;
+  }
+  &__form-input {
+    padding: 2rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+
+    &::-webkit-input-placeholder {
+      letter-spacing: 1px;
+    }
+    &:-moz-placeholder {
+      letter-spacing: 1px;
+      opacity: 1;
+    }
+    &::-moz-placeholder {
+      letter-spacing: 1px;
+      opacity: 1;
+    }
+    &:-ms-input-placeholder {
+      letter-spacing: 1px;
+    }
+    &::-ms-input-placeholder {
+      letter-spacing: 1px;
+    }
+
+    &::placeholder {
+      letter-spacing: 1px;
+    }
+  }
+  &__btn {
+    border: none;
+    width: 100%;
+  }
+}
+
+.main-footer {
+  background: #000;
+  color: #fff;
+  &__upper {
+    display: flex;
+    justify-content: space-between;
+    padding: 8rem 0;
+    @include respond(tab-port) {
+      padding: 5rem 0;
+    }
+    @include respond(phone) {
+      display: block;
+    }
+  }
+
+  &__row-1 {
+    order: 2;
+    @include respond(tab-port) {
+      margin-bottom: 4rem;
+    }
+  }
+  &__row-2 {
+    width: 40%;
+    order: 1;
+    @include respond(tab-port) {
+      width: 100%;
+    }
+  }
+
+  &__short-desc {
+    margin-top: 2rem;
+    color: #eee;
+    font-size: 1.3rem;
+    line-height: 1.8;
+  }
+
+  &__social-cont {
+    margin-top: 2rem;
+  }
+
+  &__icon {
+    margin-right: 0.8rem;
+    width: 2.5rem;
+  }
+
+  &__lower {
+    padding: 4rem 0;
+    border-top: 1px solid #444;
+    color: #eee;
+    font-size: 1.2rem;
+    text-align: left;
+    @include respond(tab-port) {
+      padding: 2rem 0;
+    }
+  }
+}

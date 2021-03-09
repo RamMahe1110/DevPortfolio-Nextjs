@@ -1,65 +1,207 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+    <>
+      <section className="hero home-hero">
+        <div className="container">
+          <h1 className="heading heading-primary">
+            <span className="heading-primary__text">
+              The Only Web Developer
+            </span>
+            <br />
+            <span className="heading-primary__text">You'll ever need</span>
+          </h1>
+          <div className="hero__info home-hero__info">
+            <p className="text-primary hero__text-primary">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem
+              libero ea inventore explicabo similique eligendi
             </p>
-          </a>
+          </div>
+          <div className="hero__cta home-hero__cta">
+            <Link href="/">
+              <a className="btn btn--primary hero__btn">About Me</a>
+            </Link>
+            <Link href="/">
+              <a className="btn btn--secondary hero__btn"> My Projects </a>
+            </Link>
+          </div>
         </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
+      </section>
+      <section className="about">
+        <div className="container">
+          <div className="about__main">
+            <div className="about__content">
+              <div className="about__main-content">
+                <h2 className="heading heading-sec section-heading">
+                  <span>About</span>
+                </h2>
+                <div className="about__text-content">
+                  <p className="text-sec about__text-sec">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maiores iure ratione inventore in quam vitae quidem mollitia
+                    praesentium natus voluptates, explicabo, aliquid illo
+                    laborum consectetur iusto, totam optio enim dolorum.
+                  </p>
+                  <br />
+                  <p className="text-sec about__text-sec">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maiores iure ratione inventore in quam vitae quidem mollitia
+                    praesentium natus voluptates, explicabo, aliquid illo
+                    laborum consectetur iusto, totam optio enim dolorum.
+                  </p>
+                  <br />
+                  <p className="text-sec about__text-sec">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maiores iure ratione inventore in quam vitae quidem mollitia
+                    praesentium natus voluptates, explicabo, aliquid illo
+                    laborum consectetur iusto, totam optio enim dolorum.
+                  </p>
+                </div>
+                <Link href="#">
+                  <a className="btn btn--primary"> Contact </a>
+                </Link>
+              </div>
+              <div className="about__visual-content">
+                <div className="about__img-cont">
+                  <img
+                    src="https://images.unsplash.com/photo-1567131308523-383d0fea9671?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=672&q=80"
+                    className="about__img"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="projects">
+        <div className="container">
+          <h2 className="heading heading-sec section-heading">
+            <span>Projects</span>
+          </h2>
+          <div className="projects-list">
+            <div className="projects-list__project">
+              <div className="projects-list__img-cont">
+                <img
+                  src="/jpeg/project-thumbnail-demo.jpeg"
+                  alt="project image"
+                  className="projects-list__img"
+                />
+              </div>
+              <h3 className="projects-list__heading">Gainon</h3>
+              <p className="text-tertiary projects-list__text-tertiary">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Aliquam assumenda illo enim doloribus nesciunt, cumque rerum
+                nihil, eaque dolorum inventore fuga velit ullam repudiandae
+                sequi eveniet? Explicabo
+              </p>
+              <Link href="/project-cs">
+                <a className="btn btn--theme projects-list__btn">Case Study</a>
+              </Link>
+            </div>
+            <div className="projects-list__project">
+              <div className="projects-list__img-cont">
+                <img
+                  src="/jpeg/project-thumbnail-demo.jpeg"
+                  alt="project image"
+                  className="projects-list__img"
+                />
+              </div>
+              <h3 className="projects-list__heading">Gainon</h3>
+              <p className="text-tertiary projects-list__text-tertiary">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Aliquam assumenda illo enim doloribus nesciunt, cumque rerum
+                nihil, eaque dolorum inventore fuga velit ullam repudiandae
+                sequi eveniet? Explicabo
+              </p>
+              <Link href="/project-cs">
+                <a className="btn btn--theme projects-list__btn">Case Study</a>
+              </Link>
+            </div>
+            <div className="projects-list__project">
+              <div className="projects-list__img-cont">
+                <img
+                  src="/jpeg/project-thumbnail-demo.jpeg"
+                  alt="project image"
+                  className="projects-list__img"
+                />
+              </div>
+              <h3 className="projects-list__heading">Gainon</h3>
+              <p className="text-tertiary projects-list__text-tertiary">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Aliquam assumenda illo enim doloribus nesciunt, cumque rerum
+                nihil, eaque dolorum inventore fuga velit ullam repudiandae
+                sequi eveniet? Explicabo
+              </p>
+              <Link href="/project-cs">
+                <a className="btn btn--theme projects-list__btn">Case Study</a>
+              </Link>
+            </div>
+            <div className="projects-list__project">
+              <div className="projects-list__img-cont">
+                <img
+                  src="/jpeg/project-thumbnail-demo.jpeg"
+                  alt="project image"
+                  className="projects-list__img"
+                />
+              </div>
+              <h3 className="projects-list__heading">Gainon</h3>
+              <p className="text-tertiary projects-list__text-tertiary">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Aliquam assumenda illo enim doloribus nesciunt, cumque rerum
+                nihil, eaque dolorum inventore fuga velit ullam repudiandae
+                sequi eveniet? Explicabo
+              </p>
+              <Link href="/project-cs">
+                <a className="btn btn--theme projects-list__btn">Case Study</a>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="contact">
+        <div className="container">
+          <h2 className="heading heading-sec section-heading contact__heading">
+            <span>Contact</span>
+          </h2>
+          <div className="contact__form-container">
+            <form action="#" className="contact__form">
+              <div className="contact__form-field">
+                <input
+                  placeholder="Name"
+                  type="text"
+                  className="contact__form-input"
+                />
+              </div>
+              <div className="contact__form-field">
+                <input
+                  placeholder="Email"
+                  type="text"
+                  className="contact__form-input"
+                />
+              </div>
+              <div className="contact__form-field">
+                <input
+                  placeholder="Phone Number"
+                  type="text"
+                  className="contact__form-input"
+                />
+              </div>
+              <div className="contact__form-field">
+                <textarea
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="10"
+                  className="contact__form-input"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <button className="btn btn--primary contact__btn">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </>
   )
 }
