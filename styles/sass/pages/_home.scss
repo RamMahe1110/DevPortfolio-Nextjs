@@ -67,6 +67,7 @@
     top: 110%;
     border-radius: 5px;
     display: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     @include respond(phone) {
       display: block;
     }
