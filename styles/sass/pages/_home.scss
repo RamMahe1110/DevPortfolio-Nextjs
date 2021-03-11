@@ -50,13 +50,13 @@
 
   &__sm-menu-icon-cont {
     display: none;
-    width: 4rem;
+    width: 3.5rem;
     img {
       width: 100%;
     }
     @include respond(phone) {
       display: unset;
-      padding: 1.5rem 0;
+      padding: 1.7rem 0;
     }
   }
 
