@@ -50,6 +50,32 @@
     text-transform: uppercase;
     letter-spacing: 2px;
   }
+
+  &__sm-menu {
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    top: 110%;
+    border-radius: 10px;
+    display: none;
+    @include respond(phone) {
+      display: block;
+    }
+  }
+  &__sm-menu-link {
+    padding: 2rem 3rem;
+    font-size: 1.8rem;
+    color: #555;
+    text-align: right;
+    border-bottom: 1px solid #eee;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #777;
+    letter-spacing: 2px;
+  }
+  &__sm-menu-link-last {
+    border-bottom: 0;
+  }
 }
 
 .hero {
