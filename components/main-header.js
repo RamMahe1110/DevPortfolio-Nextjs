@@ -4,9 +4,11 @@ export default function MainHeader() {
   return (
     <header className="header">
       <div className="header__content">
-        <div className="header__logo-container">
-          <img src="/svg/logo.svg" className="header__logo" />
-        </div>
+        <Link href="/">
+          <div className="header__logo-container">
+            <img src="/svg/logo.svg" className="header__logo" />
+          </div>
+        </Link>
         <div className="header__main">
           <ul className="header__links">
             <li className="header__link-wrapper">
