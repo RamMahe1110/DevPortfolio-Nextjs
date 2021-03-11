@@ -1,6 +1,5 @@
 import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown'
-
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import Link from 'next/link'
 
@@ -17,17 +16,12 @@ const Blog = ({ content, data }) => {
 
   return (
     <>
-      <section className="hero">
-        <div className="container">
-          <h1 className="heading heading-primary heading-primary-dec heading-primary-cent">
-            <span className="heading-primary__text">{frontmatter.title}</span>
-          </h1>
-        </div>
-      </section>
-
       <section className="main-blog">
         <div className="container main-blog__container">
-          <div className="main-blog__content">
+          <h1 className="heading heading-primary main-blog__heading-primary">
+            <span className="heading-primary__text">{frontmatter.title}</span>
+          </h1>
+          <div className="prose main-blog__article">
             <ReactMarkdown
               escapeHtml={true}
               source={content}

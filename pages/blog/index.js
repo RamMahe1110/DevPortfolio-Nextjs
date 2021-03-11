@@ -53,12 +53,12 @@ export default function Blog(props) {
               </Link>
             ))}
           </div>
-          <div className="main-blogs__pagination">
+          {/* <div className="main-blogs__pagination">
             <button className="btn main-blogs__pag-btn btn--primary">
               Previous
             </button>
             <button className="btn main-blogs__pag-btn btn--theme">Next</button>
-          </div>
+          </div> */}
         </div>
       </section>
     </>

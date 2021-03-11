@@ -90,17 +90,43 @@
 }
 
 .main-blog {
-  padding: 8rem 0;
-  line-height: 1.7;
-  font-size: 2rem;
-  color: #666;
-
-  @include respond(phone) {
-    padding: 5rem 0;
-  }
+  padding: 20rem 0 8rem 0;
 
   &__container {
-    max-width: 75rem;
+    max-width: 80rem;
+  }
+
+  &__heading-primary {
+    margin-bottom: 5rem;
+    @include respond(phone) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__article {
+    font-size: 1.8rem;
+    max-width: 80rem;
+    margin: auto;
+    line-height: 1.8;
+    color: #555;
+    overflow: hidden;
+  }
+
+  img,
+  picture,
+  video,
+  svg,
+  iframe,
+  figure,
+  embed,
+  frame,
+  canvas,
+  audio {
+    width: 100%;
+  }
+
+  @include respond(phone) {
+    padding: 15rem 0 5rem 0;
   }
 
   &__pag {
