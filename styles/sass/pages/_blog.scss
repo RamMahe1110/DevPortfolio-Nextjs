@@ -39,6 +39,11 @@
     color: #777;
     font-weight: 600;
     margin-bottom: 3rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
   }
   &__item-author-info {
     display: flex;
