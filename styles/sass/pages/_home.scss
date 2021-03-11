@@ -15,10 +15,6 @@
     top: 1rem;
   }
 
-  @include respond(phone) {
-    padding: 2.3rem 0;
-  }
-
   &__content {
     display: flex;
     align-items: center;
@@ -52,20 +48,32 @@
     letter-spacing: 2px;
   }
 
+  &__sm-menu-icon-cont {
+    display: none;
+    width: 4rem;
+    img {
+      width: 100%;
+    }
+    @include respond(phone) {
+      display: unset;
+      padding: 1.5rem 0;
+    }
+  }
+
   &__sm-menu {
     background: #fff;
     position: absolute;
     width: 100%;
     top: 110%;
-    border-radius: 10px;
+    border-radius: 5px;
     display: none;
     @include respond(phone) {
       display: block;
     }
   }
   &__sm-menu-link {
-    padding: 2rem 3rem;
-    font-size: 1.8rem;
+    padding: 2.5rem 3rem;
+    font-size: 1.6rem;
     color: #555;
     text-align: right;
     border-bottom: 1px solid #eee;
