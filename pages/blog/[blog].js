@@ -2,6 +2,7 @@ import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import Link from 'next/link'
+import gfm from 'remark-gfm'
 
 const CodeBlock = ({ language, value }) => {
   return (
@@ -23,9 +24,10 @@ const Blog = ({ content, data }) => {
           </h1>
           <div className="prose main-blog__article">
             <ReactMarkdown
-              escapeHtml={true}
+              escapeHtml={false}
               source={content}
               renderers={{ code: CodeBlock }}
+              plugins={[gfm]}
             />
           </div>
           <div className="main-blog__pag">
