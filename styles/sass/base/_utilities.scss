@@ -114,3 +114,8 @@
     background-image: linear-gradient(to right, $themeClrMain, $themeClrSec);
   }
 }
+
+
+.line-break {
+  white-space: pre-wrap;
+}

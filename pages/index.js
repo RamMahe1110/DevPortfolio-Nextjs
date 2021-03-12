@@ -87,82 +87,86 @@ export default function Home(props) {
             <span>Projects</span>
           </h2>
           <div className="projects-list">
-            <div className="projects-list__project">
-              <div className="projects-list__img-cont">
-                <img
-                  src="/jpeg/project-thumbnail-demo.jpeg"
-                  alt="project image"
-                  className="projects-list__img"
-                />
-              </div>
-              <h3 className="projects-list__heading">Gainon</h3>
-              <p className="text-tertiary projects-list__text-tertiary">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Aliquam assumenda illo enim doloribus nesciunt, cumque rerum
-                nihil, eaque dolorum inventore fuga velit ullam repudiandae
-                sequi eveniet? Explicabo
-              </p>
-              <Link href="/project-cs">
+            <Link href="/project-cs">
+              <div className="projects-list__project">
+                <div className="projects-list__img-cont">
+                  <img
+                    src="/jpeg/project-thumbnail-demo.jpeg"
+                    alt="project image"
+                    className="projects-list__img"
+                  />
+                </div>
+                <h3 className="projects-list__heading">Gainon</h3>
+                <p className="text-tertiary projects-list__text-tertiary">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Aliquam assumenda illo enim doloribus nesciunt, cumque rerum
+                  nihil, eaque dolorum inventore fuga velit ullam repudiandae
+                  sequi eveniet? Explicabo
+                </p>
+
                 <a className="btn btn--theme projects-list__btn">Case Study</a>
-              </Link>
-            </div>
-            <div className="projects-list__project">
-              <div className="projects-list__img-cont">
-                <img
-                  src="/jpeg/project-thumbnail-demo.jpeg"
-                  alt="project image"
-                  className="projects-list__img"
-                />
               </div>
-              <h3 className="projects-list__heading">Gainon</h3>
-              <p className="text-tertiary projects-list__text-tertiary">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Aliquam assumenda illo enim doloribus nesciunt, cumque rerum
-                nihil, eaque dolorum inventore fuga velit ullam repudiandae
-                sequi eveniet? Explicabo
-              </p>
-              <Link href="/project-cs">
+            </Link>
+            <Link href="/project-cs">
+              <div className="projects-list__project">
+                <div className="projects-list__img-cont">
+                  <img
+                    src="/jpeg/project-thumbnail-demo.jpeg"
+                    alt="project image"
+                    className="projects-list__img"
+                  />
+                </div>
+                <h3 className="projects-list__heading">Gainon</h3>
+                <p className="text-tertiary projects-list__text-tertiary">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Aliquam assumenda illo enim doloribus nesciunt, cumque rerum
+                  nihil, eaque dolorum inventore fuga velit ullam repudiandae
+                  sequi eveniet? Explicabo
+                </p>
+
                 <a className="btn btn--theme projects-list__btn">Case Study</a>
-              </Link>
-            </div>
-            <div className="projects-list__project">
-              <div className="projects-list__img-cont">
-                <img
-                  src="/jpeg/project-thumbnail-demo.jpeg"
-                  alt="project image"
-                  className="projects-list__img"
-                />
               </div>
-              <h3 className="projects-list__heading">Gainon</h3>
-              <p className="text-tertiary projects-list__text-tertiary">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Aliquam assumenda illo enim doloribus nesciunt, cumque rerum
-                nihil, eaque dolorum inventore fuga velit ullam repudiandae
-                sequi eveniet? Explicabo
-              </p>
-              <Link href="/project-cs">
+            </Link>
+            <Link href="/project-cs">
+              <div className="projects-list__project">
+                <div className="projects-list__img-cont">
+                  <img
+                    src="/jpeg/project-thumbnail-demo.jpeg"
+                    alt="project image"
+                    className="projects-list__img"
+                  />
+                </div>
+                <h3 className="projects-list__heading">Gainon</h3>
+                <p className="text-tertiary projects-list__text-tertiary">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Aliquam assumenda illo enim doloribus nesciunt, cumque rerum
+                  nihil, eaque dolorum inventore fuga velit ullam repudiandae
+                  sequi eveniet? Explicabo
+                </p>
+
                 <a className="btn btn--theme projects-list__btn">Case Study</a>
-              </Link>
-            </div>
-            <div className="projects-list__project">
-              <div className="projects-list__img-cont">
-                <img
-                  src="/jpeg/project-thumbnail-demo.jpeg"
-                  alt="project image"
-                  className="projects-list__img"
-                />
               </div>
-              <h3 className="projects-list__heading">Gainon</h3>
-              <p className="text-tertiary projects-list__text-tertiary">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Aliquam assumenda illo enim doloribus nesciunt, cumque rerum
-                nihil, eaque dolorum inventore fuga velit ullam repudiandae
-                sequi eveniet? Explicabo
-              </p>
-              <Link href="/project-cs">
+            </Link>
+            <Link href="/project-cs">
+              <div className="projects-list__project">
+                <div className="projects-list__img-cont">
+                  <img
+                    src="/jpeg/project-thumbnail-demo.jpeg"
+                    alt="project image"
+                    className="projects-list__img"
+                  />
+                </div>
+                <h3 className="projects-list__heading">Gainon</h3>
+                <p className="text-tertiary projects-list__text-tertiary">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Aliquam assumenda illo enim doloribus nesciunt, cumque rerum
+                  nihil, eaque dolorum inventore fuga velit ullam repudiandae
+                  sequi eveniet? Explicabo
+                </p>
+
                 <a className="btn btn--theme projects-list__btn">Case Study</a>
-              </Link>
-            </div>
+              </div>
+            </Link>
           </div>
         </div>
       </section>
@@ -212,4 +216,3 @@ export default function Home(props) {
     </>
   )
 }
-

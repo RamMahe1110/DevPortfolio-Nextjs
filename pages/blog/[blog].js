@@ -28,6 +28,7 @@ const Blog = ({ content, data }) => {
               source={content}
               renderers={{ code: CodeBlock }}
               plugins={[gfm]}
+              className="line-break"
             />
           </div>
           <div className="main-blog__pag">
