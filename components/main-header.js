@@ -63,12 +63,12 @@ export default function MainHeader() {
                   Home
                 </li>
               </Link>
-              <Link href="/">
+              <Link href="/#about">
                 <li onClick={closeSmallMenu} className="header__sm-menu-link">
                   About
                 </li>
               </Link>
-              <Link href="/">
+              <Link href="/#projects">
                 <li onClick={closeSmallMenu} className="header__sm-menu-link">
                   Projects
                 </li>
