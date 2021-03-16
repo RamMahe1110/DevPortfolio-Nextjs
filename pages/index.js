@@ -26,10 +26,10 @@ export default function Home(props) {
             </p>
           </div>
           <div className="hero__cta home-hero__cta">
-            <Link href="/">
+            <Link href="/#about">
               <a className="btn btn--primary hero__btn">About Me</a>
             </Link>
-            <Link href="/">
+            <Link href="/#projects">
               <a className="btn btn--secondary hero__btn"> My Projects </a>
             </Link>
           </div>
@@ -65,7 +65,7 @@ export default function Home(props) {
                     laborum consectetur iusto, totam optio enim dolorum.
                   </p>
                 </div>
-                <Link href="#">
+                <Link href="/#contact">
                   <a className="btn btn--primary"> Contact </a>
                 </Link>
               </div>
@@ -170,7 +170,7 @@ export default function Home(props) {
           </div>
         </div>
       </section>
-      <section className="contact">
+      <section id="contact" className="contact">
         <div className="container">
           <h2 className="heading heading-sec section-heading contact__heading">
             <span>Contact</span>
