@@ -35,7 +35,7 @@ export default function Home(props) {
           </div>
         </div>
       </section>
-      <section className="about">
+      <section id="about" className="about">
         <div className="container">
           <div className="about__main">
             <div className="about__content">
@@ -81,7 +81,7 @@ export default function Home(props) {
           </div>
         </div>
       </section>
-      <section className="projects">
+      <section id="projects" className="projects">
         <div className="container">
           <h2 className="heading heading-sec section-heading">
             <span>Projects</span>

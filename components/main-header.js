@@ -25,12 +25,12 @@ export default function MainHeader() {
               </Link>
             </li>
             <li className="header__link-wrapper">
-              <Link href="/">
+              <Link href="/#about">
                 <a className="header__link">About </a>
               </Link>
             </li>
             <li className="header__link-wrapper">
-              <Link href="#">
+              <Link href="/#projects">
                 <a className="header__link">Projects</a>
               </Link>
             </li>
